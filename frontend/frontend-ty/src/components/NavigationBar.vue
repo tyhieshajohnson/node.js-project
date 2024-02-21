@@ -7,7 +7,7 @@
           <img
             class="navigation-image"
             src="https://i.ibb.co/k3RqrMD/Screenshot-2024-02-21-122216.png"
-            style="height: 70px;"
+            style="height: 70px"
         /></a>
         <button
           class="navbar-toggler"
@@ -20,15 +20,55 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="background-color: #141414;">
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNavAltMarkup"
+          style="background-color: #141414"
+        >
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Services</a>
-            <a class="nav-link" href="#">Testimonials</a>
-            <a class="nav-link" href="#">Contact</a>
+            <!-- Home Router -->
+            <router-link
+              to="/"
+              class="nav-link"
+              style="font-family: 'Manrope', sans-serif"
+              >Home
+            </router-link>
+            <!-- About Router -->
+            <router-link
+              to="/about"
+              class="nav-link"
+              style="font-family: 'Manrope', sans-serif"
+              >About
+            </router-link>
+            <!-- Services -->
+            <router-link
+              to="/services"
+              class="nav-link"
+              style="font-family: 'Manrope', sans-serif"
+              >Service
+            </router-link>
+            <!-- Testimonial -->
+            <router-link
+              to="/testimonial"
+              class="nav-link"
+              style="font-family: 'Manrope', sans-serif"
+              >Testimonials
+            </router-link>
+            <!-- Contact -->
+            <router-link
+              to="/contact"
+              class="nav-link"
+              style="font-family: 'Manrope', sans-serif"
+              >Contact
+            </router-link>
             <button>
-              <a class="nav-link" href="#">CART</a>
+              <!-- Cart -->
+              <router-link
+                to="/cart"
+                class="nav-link"
+                style="font-family: 'Manrope', sans-serif"
+                >Cart
+              </router-link>
             </button>
           </div>
         </div>
@@ -66,20 +106,20 @@ export default {
 }
 
 @media only screen and (max-width: 600px) {
-.navigation-image {
-  width: 150px;
-}
+  .navigation-image {
+    width: 150px;
+  }
 
-.navigation-container {
-  background-color: #141414;
-  height: 90px;
-}
-.icon-container {
-  display: flex;
-  position: absolute;
-  justify-content: space-between;
-  margin-top: 40px;
-  margin-left: 150px;
-}
+  .navigation-container {
+    background-color: #141414;
+    height: 90px;
+  }
+  .icon-container {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left: 150px;
+  }
 }
 </style>
